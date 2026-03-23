@@ -1,0 +1,61 @@
+/* Pengaturan Umum */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* KRITERIA: Menggunakan Flexbox pada <main> */
+main {
+    display: flex; /* Ini kunci Flexbox */
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Bagian Content (Article) mengambil 75% lebar */
+#content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Bagian Aside (Sidebar) mengambil 25% lebar */
+aside {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Ukuran foto profil agar pas */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Navigasi */
+nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
